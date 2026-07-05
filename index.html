@@ -15,7 +15,7 @@
   --paper2:#ede9e0;
   --red:#c84b2f;
   --green:#1a6b4a;
-  --muted:#7a7570;
+  --muted:#5c5752;
   --border:rgba(12,12,10,0.11);
   --border2:rgba(12,12,10,0.22);
 }
@@ -27,19 +27,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-logo{font-family:'Instrument Serif',serif;font-style:italic;font-size:1.2rem;color:var(--ink);text-decoration:none}
 .nav-logo b{color:var(--red);font-weight:400}
 .nav-links{display:flex;gap:1.75rem;list-style:none}
-.nav-links a{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-links a{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
 .nav-links a:hover{color:var(--ink)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--ink);transition:all 0.3s}
 .mobile-menu{display:none;position:fixed;top:57px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--border);padding:1.5rem 2rem;z-index:99;flex-direction:column;gap:1.25rem}
-.mobile-menu a{font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.mobile-menu a{font-size:0.95rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none}
 .mobile-menu.open{display:flex}
 
 /* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 0.9fr;padding-top:57px}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3.5rem 5rem 3rem;border-right:1px solid var(--border)}
-.eyebrow{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:1.4rem}
-.hero-name{font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:0.93;letter-spacing:-0.04em;margin-bottom:1.8rem}
+.eyebrow{font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:1.4rem}
+.hero-name{font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:0.98;letter-spacing:-0.04em;margin-bottom:1.8rem}
 .hero-name em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--red)}
 .hero-bio{font-size:1rem;color:var(--muted);max-width:38ch;line-height:1.8;margin-bottom:2.2rem}
 .hero-bio strong{color:var(--ink);font-weight:600}
@@ -58,16 +58,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .stat-card:hover{border-color:var(--border2)}
 .stat-num{font-size:2.6rem;font-weight:800;letter-spacing:-0.04em;line-height:1;margin-bottom:0.2rem}
 .stat-num em{color:var(--red);font-style:normal}
-.stat-label{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
+.stat-label{font-family:'DM Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
 
-.available-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(26,107,74,0.08);border:1px solid rgba(26,107,74,0.2);border-radius:20px;padding:0.45rem 1rem;font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--green)}
+.available-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(26,107,74,0.08);border:1px solid rgba(26,107,74,0.2);border-radius:20px;padding:0.45rem 1rem;font-family:'DM Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--green)}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
 
 /* SECTIONS */
 section{padding:5.5rem 3rem;border-top:1px solid var(--border)}
 .sec-head{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:3.5rem}
-.sec-num{font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--red);letter-spacing:0.1em}
+.sec-num{font-family:'DM Mono',monospace;font-size:0.76rem;color:var(--red);letter-spacing:0.1em}
 .sec-title{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.04em;line-height:1}
 .sec-title em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
 
@@ -79,13 +79,13 @@ section{padding:5.5rem 3rem;border-top:1px solid var(--border)}
 .skill-group-title::before{content:'';display:block;width:12px;height:3px;background:var(--red);border-radius:2px}
 .skill-bar-row{display:flex;flex-direction:column;gap:0.75rem}
 .skill-bar-item{display:flex;flex-direction:column;gap:0.3rem}
-.skill-bar-label{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.06em;color:var(--muted);display:flex;justify-content:space-between}
+.skill-bar-label{font-family:'DM Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--muted);display:flex;justify-content:space-between}
 .skill-track{height:5px;background:rgba(12,12,10,0.08);border-radius:3px;overflow:hidden}
 .skill-fill{height:100%;border-radius:3px;background:var(--ink);transform-origin:left;transform:scaleX(0);transition:transform 0.8s cubic-bezier(0.25,1,0.5,1)}
 .skill-fill.animated{transform:scaleX(1)}
 .skill-fill.accent{background:var(--red)}
 .tag-cloud{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:1rem}
-.chip{font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.05em;padding:0.25rem 0.6rem;border:1px solid var(--border2);border-radius:2px;color:var(--muted)}
+.chip{font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.05em;padding:0.25rem 0.6rem;border:1px solid var(--border2);border-radius:2px;color:var(--muted)}
 
 /* EXPERIENCE TIMELINE */
 .timeline{position:relative;padding-left:2rem}
@@ -96,15 +96,15 @@ section{padding:5.5rem 3rem;border-top:1px solid var(--border)}
 .tl-item:hover .tl-dot{border-color:var(--red)}
 .tl-item.active .tl-dot{background:var(--red);border-color:var(--red)}
 .tl-meta{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.3rem;flex-wrap:wrap}
-.tl-date{font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);letter-spacing:0.06em}
-.badge{display:inline-block;font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
+.tl-date{font-family:'DM Mono',monospace;font-size:0.74rem;color:var(--muted);letter-spacing:0.06em}
+.badge{display:inline-block;font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
 .badge.intern{background:rgba(200,75,47,0.1);color:var(--red)}
 .badge.volunteer{background:rgba(26,107,74,0.1);color:var(--green)}
 .badge.community{background:rgba(200,75,47,0.06);color:var(--muted);border:1px solid var(--border2)}
 .tl-role{font-size:1rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.1rem}
-.tl-org{font-size:0.82rem;color:var(--muted);margin-bottom:0.75rem}
+.tl-org{font-size:0.88rem;color:var(--muted);margin-bottom:0.75rem}
 .tl-points{list-style:none}
-.tl-points li{font-size:0.85rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.35rem;line-height:1.6}
+.tl-points li{font-size:0.9rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.35rem;line-height:1.6}
 .tl-points li::before{content:'›';position:absolute;left:0;color:var(--red);font-size:1rem;line-height:1.4}
 
 /* PROJECTS */
@@ -114,38 +114,38 @@ section{padding:5.5rem 3rem;border-top:1px solid var(--border)}
 .proj-card:hover{border-color:var(--border2);transform:translateY(-2px)}
 .proj-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
 .proj-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem}
-.proj-num{font-family:'DM Mono',monospace;font-size:0.58rem;color:var(--muted);letter-spacing:0.1em}
+.proj-num{font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--muted);letter-spacing:0.1em}
 .proj-badges{display:flex;gap:0.4rem;flex-wrap:wrap}
-.proj-badge{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
+.proj-badge{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
 .proj-badge.hack{background:rgba(200,75,47,0.1);color:var(--red)}
 .proj-badge.active{background:rgba(26,107,74,0.1);color:var(--green)}
 .proj-badge.default{background:rgba(12,12,10,0.06);color:var(--muted)}
 .proj-title{font-size:1.1rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.5rem;line-height:1.2}
-.proj-desc{font-size:0.83rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;flex:1}
+.proj-desc{font-size:0.9rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;flex:1}
 .proj-stack{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:1rem}
-.proj-tag{font-family:'DM Mono',monospace;font-size:0.58rem;padding:0.18rem 0.5rem;border:1px solid var(--border);border-radius:2px;color:var(--muted)}
-.proj-link{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:0.3rem;margin-top:auto;transition:color 0.2s}
+.proj-tag{font-family:'DM Mono',monospace;font-size:0.68rem;padding:0.18rem 0.5rem;border:1px solid var(--border);border-radius:2px;color:var(--muted)}
+.proj-link{font-family:'DM Mono',monospace;font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:0.3rem;margin-top:auto;transition:color 0.2s}
 .proj-link:hover{color:var(--red)}
 .proj-highlights{list-style:none;margin-bottom:1rem}
-.proj-highlights li{font-size:0.8rem;color:var(--muted);padding-left:1rem;position:relative;margin-bottom:0.3rem;line-height:1.55}
+.proj-highlights li{font-size:0.88rem;color:var(--muted);padding-left:1rem;position:relative;margin-bottom:0.3rem;line-height:1.55}
 .proj-highlights li::before{content:'›';position:absolute;left:0;color:var(--red);font-size:1rem;line-height:1.4}
 
 /* COMMUNITY */
 .community-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .comm-card{border-left:3px solid var(--green);padding:1.25rem 1.25rem 1.25rem 1.5rem;background:rgba(26,107,74,0.04);border-radius:0 6px 6px 0}
-.comm-org{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.3rem}
-.comm-role{font-size:0.88rem;font-weight:700;margin-bottom:0.4rem}
-.comm-desc{font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:0.5rem}
-.comm-date{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted)}
+.comm-org{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.3rem}
+.comm-role{font-size:0.92rem;font-weight:700;margin-bottom:0.4rem}
+.comm-desc{font-size:0.86rem;color:var(--muted);line-height:1.6;margin-bottom:0.5rem}
+.comm-date{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)}
 
 /* CERTS */
 #certs{background:var(--paper2)}
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.85rem}
 .cert-card{background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:1.25rem;transition:border-color 0.2s}
 .cert-card:hover{border-color:var(--border2)}
-.cert-issuer{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.4rem}
-.cert-name{font-size:0.85rem;font-weight:600;line-height:1.35;margin-bottom:0.3rem}
-.cert-date{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted)}
+.cert-issuer{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.4rem}
+.cert-name{font-size:0.9rem;font-weight:600;line-height:1.35;margin-bottom:0.3rem}
+.cert-date{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)}
 .cert-card.award{border-left:3px solid var(--red)}
 .cert-card.award .cert-issuer{color:var(--green)}
 
@@ -154,17 +154,17 @@ section{padding:5.5rem 3rem;border-top:1px solid var(--border)}
 .edu-card{border:1px solid var(--border);border-radius:6px;padding:1.5rem;transition:border-color 0.2s}
 .edu-card:hover{border-color:var(--border2)}
 .edu-degree{font-size:0.95rem;font-weight:700;margin-bottom:0.25rem}
-.edu-school{font-size:0.82rem;color:var(--muted);margin-bottom:0.2rem}
-.edu-date{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted)}
+.edu-school{font-size:0.88rem;color:var(--muted);margin-bottom:0.2rem}
+.edu-date{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)}
 
 /* FOOTER */
 footer{padding:5rem 3rem;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end}
 .footer-tagline{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.04em;line-height:1.05;margin-bottom:1.5rem}
 .footer-tagline em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--red)}
 .footer-links{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:1.5rem}
-.footer-link{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px;transition:color 0.2s,border-color 0.2s}
+.footer-link{font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px;transition:color 0.2s,border-color 0.2s}
 .footer-link:hover{color:var(--red);border-color:var(--red)}
-.footer-copy{font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);line-height:1.9}
+.footer-copy{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted);line-height:1.9}
 
 /* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
@@ -249,6 +249,7 @@ footer{padding:5rem 3rem;border-top:1px solid var(--border);display:grid;grid-te
         <div class="stat-num">24<em>h</em></div>
         <div class="stat-label">Hackathon shipped</div>
       </div>
+  </div>
   </div>
 </div>
 
