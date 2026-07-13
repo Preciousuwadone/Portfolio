@@ -3,206 +3,172 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Precious Uwadone — Software Engineer</title>
-<meta name="description" content="Precious Uwadone — Software Engineer, Cloud and AI builder based in Lagos, Nigeria."/>
+<title>Precious Uwadone : Software Engineer</title>
+<meta name="description" content="Precious Uwadone : Software Engineer, Cloud and AI builder based in Lagos, Nigeria."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#0c0c0a;
-  --paper:#f5f2ec;
-  --paper2:#ede9e0;
-  --red:#c84b2f;
-  --green:#1a6b4a;
-  --muted:#5c5752;
-  --border:rgba(12,12,10,0.11);
-  --border2:rgba(12,12,10,0.22);
+  --ink:#161a22;
+  --paper:#ffffff;
+  --paper2:#f4f5f7;
+  --surface:#f9fafb;
+  --line:#e3e5ea;
+  --line2:#d1d5db;
+  --blue:#2452d9;
+  --blue-dim:#eaefff;
+  --muted:#5c6472;
 }
-html{scroll-behavior:smooth}
-body{font-family:'Syne',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+h1,h2,.role,.proj-title,.logo,.tagline{font-family:'Space Grotesk',sans-serif}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(245,242,236,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'Instrument Serif',serif;font-style:italic;font-size:1.2rem;color:var(--ink);text-decoration:none}
-.nav-logo b{color:var(--red);font-weight:400}
-.nav-links{display:flex;gap:1.75rem;list-style:none}
-.nav-links a{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
-.nav-links a:hover{color:var(--ink)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0.95rem 2.5rem;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-size:1.1rem;font-weight:700;color:var(--ink);text-decoration:none}
+.logo b{color:var(--blue)}
+.nav-links{display:flex;gap:1.7rem;list-style:none}
+.nav-links a{font-size:0.9rem;font-weight:500;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--blue)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hamburger span{display:block;width:22px;height:2px;background:var(--ink);transition:all 0.3s}
-.mobile-menu{display:none;position:fixed;top:57px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--border);padding:1.5rem 2rem;z-index:99;flex-direction:column;gap:1.25rem}
-.mobile-menu a{font-size:0.95rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink)}
+.mobile-menu{display:none;position:fixed;top:56px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:1.4rem 1.75rem;z-index:99;flex-direction:column;gap:1.1rem;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.mobile-menu a{font-size:1rem;color:var(--muted);text-decoration:none;font-weight:500}
 .mobile-menu.open{display:flex}
 
 /* HERO */
-.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 0.9fr;padding-top:57px}
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3.5rem 5rem 3rem;border-right:1px solid var(--border)}
-.eyebrow{font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:1.4rem}
-.hero-name{font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:0.98;letter-spacing:-0.04em;margin-bottom:1.8rem}
-.hero-name em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--red)}
-.hero-bio{font-size:1rem;color:var(--muted);max-width:38ch;line-height:1.8;margin-bottom:2.2rem}
+.hero{padding:6.5rem 2.5rem 2.75rem;max-width:1100px;margin:0 auto}
+.eyebrow{font-size:0.86rem;font-weight:600;color:var(--blue);letter-spacing:0.02em;margin-bottom:0.9rem}
+.hero-name{font-size:clamp(2.2rem,4.6vw,3.5rem);font-weight:700;line-height:1.08;letter-spacing:-0.02em;margin-bottom:1rem}
+.hero-name span{color:var(--blue)}
+.hero-bio{font-size:1.03rem;color:var(--muted);max-width:66ch;line-height:1.75;margin-bottom:1.6rem}
 .hero-bio strong{color:var(--ink);font-weight:600}
-.hero-cta{display:flex;gap:0.85rem;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:0.45rem;padding:0.72rem 1.6rem;border-radius:3px;font-size:0.78rem;letter-spacing:0.07em;text-transform:uppercase;text-decoration:none;font-family:'Syne',sans-serif;font-weight:600;transition:all 0.2s;cursor:pointer}
-.btn-dark{background:var(--ink);color:var(--paper)}
-.btn-dark:hover{background:var(--red)}
-.btn-outline{border:1.5px solid var(--border2);color:var(--ink)}
-.btn-outline:hover{border-color:var(--ink)}
-
-.hero-right{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem}
-
-/* STAT CARDS */
-.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.5rem}
-.stat-card{background:var(--paper2);border:1px solid var(--border);border-radius:6px;padding:1.4rem 1.2rem;transition:border-color 0.2s}
-.stat-card:hover{border-color:var(--border2)}
-.stat-num{font-size:2.6rem;font-weight:800;letter-spacing:-0.04em;line-height:1;margin-bottom:0.2rem}
-.stat-num em{color:var(--red);font-style:normal}
-.stat-label{font-family:'DM Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
-
-.available-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(26,107,74,0.08);border:1px solid rgba(26,107,74,0.2);border-radius:20px;padding:0.45rem 1rem;font-family:'DM Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--green)}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero-cta{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:2rem}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.68rem 1.5rem;border-radius:7px;font-size:0.92rem;font-weight:600;text-decoration:none;transition:all 0.2s;cursor:pointer}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--blue)}
+.btn-outline{border:1.5px solid var(--line2);color:var(--ink)}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;border-top:1px solid var(--line);padding-top:1.4rem}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:1.85rem;font-weight:700;letter-spacing:-0.02em;line-height:1}
+.stat-num span{color:var(--blue)}
+.stat-label{font-size:0.84rem;color:var(--muted);margin-top:0.3rem}
 
 /* SECTIONS */
-section{padding:5.5rem 3rem;border-top:1px solid var(--border)}
-.sec-head{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:3.5rem}
-.sec-num{font-family:'DM Mono',monospace;font-size:0.76rem;color:var(--red);letter-spacing:0.1em}
-.sec-title{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.04em;line-height:1}
-.sec-title em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+section{padding:2.75rem 2.5rem;max-width:1100px;margin:0 auto;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:1.8rem;display:flex;align-items:center;gap:0.9rem}
+.sec-marker{width:4px;height:1.9rem;background:var(--blue);border-radius:2px;flex-shrink:0}
+.sec-label{font-size:0.78rem;font-weight:600;color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:0.15rem}
+.sec-title{font-size:clamp(1.35rem,2vw,1.65rem);font-weight:700;letter-spacing:-0.01em}
 
-/* SKILLS VISUAL */
-#skills{background:var(--paper2)}
-.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
-.skill-group{margin-bottom:2rem}
-.skill-group-title{font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:0.6rem}
-.skill-group-title::before{content:'';display:block;width:12px;height:3px;background:var(--red);border-radius:2px}
-.skill-bar-row{display:flex;flex-direction:column;gap:0.75rem}
-.skill-bar-item{display:flex;flex-direction:column;gap:0.3rem}
-.skill-bar-label{font-family:'DM Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--muted);display:flex;justify-content:space-between}
-.skill-track{height:5px;background:rgba(12,12,10,0.08);border-radius:3px;overflow:hidden}
-.skill-fill{height:100%;border-radius:3px;background:var(--ink);transform-origin:left;transform:scaleX(0);transition:transform 0.8s cubic-bezier(0.25,1,0.5,1)}
-.skill-fill.animated{transform:scaleX(1)}
-.skill-fill.accent{background:var(--red)}
-.tag-cloud{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:1rem}
-.chip{font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.05em;padding:0.25rem 0.6rem;border:1px solid var(--border2);border-radius:2px;color:var(--muted)}
+/* SKILLS — bars, blue scheme */
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.2rem}
+.skill-group{margin-bottom:1.5rem}
+.skill-group-title{font-size:0.82rem;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.9rem;display:flex;align-items:center;gap:0.55rem}
+.skill-group-title::before{content:'';display:block;width:12px;height:3px;background:var(--blue);border-radius:1px}
+.skill-bar-item{margin-bottom:0.85rem}
+.skill-bar-item:last-child{margin-bottom:0}
+.skill-bar-label{display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:0.4rem}
+.skill-bar-label span:last-child{color:var(--muted);font-size:0.82rem}
+.skill-track{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.skill-fill{height:100%;border-radius:3px;background:var(--ink)}
+.skill-fill.accent{background:var(--blue)}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:0.6rem}
+.chip{font-size:0.82rem;padding:0.32rem 0.7rem;border:1px solid var(--line2);border-radius:5px;color:var(--muted);background:var(--surface)}
 
-/* EXPERIENCE TIMELINE */
-.timeline{position:relative;padding-left:2rem}
-.timeline::before{content:'';position:absolute;left:0;top:0.5rem;bottom:0;width:2px;background:var(--border2);border-radius:2px}
-.tl-item{position:relative;padding-bottom:2.5rem}
-.tl-item:last-child{padding-bottom:0}
-.tl-dot{position:absolute;left:-2.45rem;top:0.35rem;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2.5px solid var(--border2);transition:border-color 0.2s}
-.tl-item:hover .tl-dot{border-color:var(--red)}
-.tl-item.active .tl-dot{background:var(--red);border-color:var(--red)}
-.tl-meta{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.3rem;flex-wrap:wrap}
-.tl-date{font-family:'DM Mono',monospace;font-size:0.74rem;color:var(--muted);letter-spacing:0.06em}
-.badge{display:inline-block;font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
-.badge.intern{background:rgba(200,75,47,0.1);color:var(--red)}
-.badge.volunteer{background:rgba(26,107,74,0.1);color:var(--green)}
-.badge.community{background:rgba(200,75,47,0.06);color:var(--muted);border:1px solid var(--border2)}
-.tl-role{font-size:1rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.1rem}
-.tl-org{font-size:0.88rem;color:var(--muted);margin-bottom:0.75rem}
-.tl-points{list-style:none}
-.tl-points li{font-size:0.9rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.35rem;line-height:1.6}
-.tl-points li::before{content:'›';position:absolute;left:0;color:var(--red);font-size:1rem;line-height:1.4}
+/* EXPERIENCE */
+.exp-item{display:grid;grid-template-columns:165px 1fr;gap:1.6rem;padding:1.3rem 0;border-bottom:1px solid var(--line)}
+.exp-item:last-child{border-bottom:none}
+.exp-date{font-size:0.86rem;color:var(--muted);font-weight:500}
+.exp-badge{display:inline-block;font-size:0.74rem;font-weight:600;padding:0.18rem 0.55rem;border-radius:4px;background:var(--blue-dim);color:var(--blue);margin-top:0.45rem}
+.role{font-size:1.06rem;font-weight:700;margin-bottom:0.12rem}
+.org{font-size:0.9rem;color:var(--muted);margin-bottom:0.6rem}
+.exp-points{list-style:none}
+.exp-points li{font-size:0.92rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.35rem;line-height:1.6}
+.exp-points li::before{content:'•';position:absolute;left:0;color:var(--blue);font-weight:700}
 
 /* PROJECTS */
 #projects{background:var(--paper2)}
-.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.proj-card{background:var(--paper);border:1px solid var(--border);border-radius:8px;padding:1.75rem;transition:border-color 0.2s,transform 0.2s;display:flex;flex-direction:column}
-.proj-card:hover{border-color:var(--border2);transform:translateY(-2px)}
-.proj-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.proj-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem}
-.proj-num{font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--muted);letter-spacing:0.1em}
-.proj-badges{display:flex;gap:0.4rem;flex-wrap:wrap}
-.proj-badge{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:2px}
-.proj-badge.hack{background:rgba(200,75,47,0.1);color:var(--red)}
-.proj-badge.active{background:rgba(26,107,74,0.1);color:var(--green)}
-.proj-badge.default{background:rgba(12,12,10,0.06);color:var(--muted)}
-.proj-title{font-size:1.1rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.5rem;line-height:1.2}
-.proj-desc{font-size:0.9rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;flex:1}
-.proj-stack{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:1rem}
-.proj-tag{font-family:'DM Mono',monospace;font-size:0.68rem;padding:0.18rem 0.5rem;border:1px solid var(--border);border-radius:2px;color:var(--muted)}
-.proj-link{font-family:'DM Mono',monospace;font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:0.3rem;margin-top:auto;transition:color 0.2s}
-.proj-link:hover{color:var(--red)}
-.proj-highlights{list-style:none;margin-bottom:1rem}
-.proj-highlights li{font-size:0.88rem;color:var(--muted);padding-left:1rem;position:relative;margin-bottom:0.3rem;line-height:1.55}
-.proj-highlights li::before{content:'›';position:absolute;left:0;color:var(--red);font-size:1rem;line-height:1.4}
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.proj-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem 1.5rem;transition:box-shadow 0.2s,transform 0.2s;display:flex;flex-direction:column}
+.proj-card:hover{box-shadow:0 8px 20px rgba(22,26,34,0.07);transform:translateY(-1px)}
+.proj-card.featured{grid-column:1/-1}
+.proj-header{display:flex;justify-content:space-between;align-items:flex-start;gap:0.8rem;margin-bottom:0.55rem;flex-wrap:wrap}
+.proj-title{font-size:1.03rem;font-weight:700}
+.proj-badge{font-size:0.73rem;font-weight:600;padding:0.18rem 0.55rem;border-radius:4px;white-space:nowrap}
+.proj-badge.active{background:var(--blue-dim);color:var(--blue)}
+.proj-badge.hack{background:#fff2e2;color:#b5620a}
+.proj-badge.default{background:var(--line);color:var(--muted)}
+.proj-desc{font-size:0.89rem;color:var(--muted);line-height:1.65;margin-bottom:0.7rem;flex:1}
+.proj-highlights{list-style:none;margin-bottom:0.7rem}
+.proj-highlights li{font-size:0.88rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.32rem;line-height:1.6}
+.proj-highlights li::before{content:'•';position:absolute;left:0;color:var(--blue);font-weight:700}
+.proj-note{font-size:0.83rem;color:var(--muted);background:var(--paper2);border-left:3px solid var(--blue);padding:0.6rem 0.8rem;border-radius:0 5px 5px 0;margin-bottom:0.7rem;line-height:1.55}
+.proj-stack{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:0.7rem}
+.proj-tag{font-size:0.74rem;padding:0.2rem 0.55rem;border:1px solid var(--line2);border-radius:4px;color:var(--muted)}
+.proj-links{display:flex;gap:1.1rem;margin-top:auto}
+.proj-link{font-size:0.85rem;font-weight:600;color:var(--blue);text-decoration:none}
+.proj-link:hover{text-decoration:underline}
 
-/* COMMUNITY */
-.community-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.comm-card{border-left:3px solid var(--green);padding:1.25rem 1.25rem 1.25rem 1.5rem;background:rgba(26,107,74,0.04);border-radius:0 6px 6px 0}
-.comm-org{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.3rem}
-.comm-role{font-size:0.92rem;font-weight:700;margin-bottom:0.4rem}
-.comm-desc{font-size:0.86rem;color:var(--muted);line-height:1.6;margin-bottom:0.5rem}
-.comm-date{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)}
+/* COMMUNITY — cards with real write-ups */
+.community-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:2.2rem}
+.comm-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem 1.4rem}
+.comm-org{font-size:0.78rem;font-weight:600;color:var(--blue);margin-bottom:0.35rem}
+.comm-title{font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;line-height:1.35}
+.comm-desc{font-size:0.85rem;color:var(--muted);line-height:1.65;margin-bottom:0.6rem}
+.comm-date{font-size:0.78rem;color:var(--muted);font-weight:500}
 
-/* CERTS */
-#certs{background:var(--paper2)}
-.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.85rem}
-.cert-card{background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:1.25rem;transition:border-color 0.2s}
-.cert-card:hover{border-color:var(--border2)}
-.cert-issuer{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.4rem}
-.cert-name{font-size:0.9rem;font-weight:600;line-height:1.35;margin-bottom:0.3rem}
-.cert-date{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)}
-.cert-card.award{border-left:3px solid var(--red)}
-.cert-card.award .cert-issuer{color:var(--green)}
-
-/* EDUCATION */
-.edu-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.edu-card{border:1px solid var(--border);border-radius:6px;padding:1.5rem;transition:border-color 0.2s}
-.edu-card:hover{border-color:var(--border2)}
-.edu-degree{font-size:0.95rem;font-weight:700;margin-bottom:0.25rem}
-.edu-school{font-size:0.88rem;color:var(--muted);margin-bottom:0.2rem}
-.edu-date{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)}
+/* CERTS + EDUCATION — contained cards */
+.info-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1rem}
+.info-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem 1.5rem}
+.info-card-title{font-size:0.8rem;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.9rem;display:flex;align-items:center;gap:0.55rem}
+.info-card-title::before{content:'';display:block;width:12px;height:3px;background:var(--blue);border-radius:1px}
+.info-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:0.7rem 0;border-bottom:1px solid var(--line)}
+.info-row:last-child{border-bottom:none;padding-bottom:0}
+.info-row:first-child{padding-top:0}
+.info-main .info-title{font-size:0.88rem;font-weight:700;margin-bottom:0.12rem;line-height:1.4}
+.info-main .info-issuer{font-size:0.79rem;color:var(--muted)}
+.info-date{font-size:0.78rem;color:var(--muted);white-space:nowrap}
+.award-row .info-issuer{color:#b5620a;font-weight:600}
 
 /* FOOTER */
-footer{padding:5rem 3rem;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end}
-.footer-tagline{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.04em;line-height:1.05;margin-bottom:1.5rem}
-.footer-tagline em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--red)}
-.footer-links{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:1.5rem}
-.footer-link{font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px;transition:color 0.2s,border-color 0.2s}
-.footer-link:hover{color:var(--red);border-color:var(--red)}
-.footer-copy{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted);line-height:1.9}
+footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr;gap:2.2rem;align-items:end}
+.tagline{font-size:clamp(1.4rem,2.8vw,2.1rem);font-weight:700;line-height:1.22;letter-spacing:-0.02em;margin-bottom:1.3rem}
+.tagline span{color:#7d9cff}
+.footer-links{display:flex;gap:1.2rem;flex-wrap:wrap;margin-bottom:0.9rem}
+.footer-link{font-size:0.88rem;font-weight:500;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.3);padding-bottom:2px}
+.footer-link:hover{border-color:#7d9cff;color:#7d9cff}
+.footer-copy{font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.85;text-align:right}
 
-/* ANIMATIONS */
-@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.hero-left>*{animation:fadeUp 0.55s ease both}
-.hero-left>*:nth-child(1){animation-delay:0.05s}
-.hero-left>*:nth-child(2){animation-delay:0.13s}
-.hero-left>*:nth-child(3){animation-delay:0.22s}
-.hero-left>*:nth-child(4){animation-delay:0.32s}
-
-/* RESPONSIVE */
-@media(max-width:960px){
-  nav{padding:1rem 1.5rem}
+@media(max-width:900px){
+  nav{padding:0.9rem 1.25rem}
   .nav-links{display:none}
   .hamburger{display:flex}
-  .hero{grid-template-columns:1fr}
-  .hero-left{padding:5rem 1.5rem 2rem;border-right:none}
-  .hero-right{padding:2rem 1.5rem 3.5rem;border-top:1px solid var(--border)}
-  section{padding:4rem 1.5rem}
-  .skills-layout{grid-template-columns:1fr}
+  .hero{padding:6rem 1.25rem 2.25rem}
+  section{padding:2.4rem 1.25rem}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:1.1rem}
+  .skills-grid{grid-template-columns:1fr}
+  .exp-item{grid-template-columns:1fr;gap:0.5rem}
   .projects-grid{grid-template-columns:1fr}
-  .proj-card.featured{grid-column:1;display:flex;flex-direction:column}
-  .community-row{grid-template-columns:1fr}
-  .edu-row{grid-template-columns:1fr}
-  footer{grid-template-columns:1fr;padding:3.5rem 1.5rem}
-  .stats-grid{grid-template-columns:1fr 1fr}
+  .proj-card.featured{grid-column:1}
+  .community-grid{grid-template-columns:1fr;gap:1rem}
+  .info-grid{grid-template-columns:1fr;gap:1rem}
+  .footer-inner{grid-template-columns:1fr;gap:1.7rem}
+  .footer-copy{text-align:left}
 }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="#" class="nav-logo">Precious <b>Uwadone</b></a>
+  <a href="#" class="logo">Precious <b>Uwadone</b></a>
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#community">Community</a></li>
-    <li><a href="#certs">Certifications</a></li>
+    <li><a href="#more">More</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="hamburger" onclick="toggleMenu()" aria-label="Open navigation">
@@ -214,131 +180,100 @@ footer{padding:5rem 3rem;border-top:1px solid var(--border);display:grid;grid-te
   <a href="#skills" onclick="closeMenu()">Skills</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
   <a href="#projects" onclick="closeMenu()">Projects</a>
-  <a href="#community" onclick="closeMenu()">Community</a>
-  <a href="#certs" onclick="closeMenu()">Certifications</a>
+  <a href="#more" onclick="closeMenu()">More</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 
 <div class="hero">
-  <div class="hero-left">
-    <p class="eyebrow">Lagos, Nigeria &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; Cloud &amp; AI</p>
-    <h1 class="hero-name">Precious<br><em>Uwadone</em></h1>
-    <p class="hero-bio">
-      I am a Computer Science student at <strong>Pan-Atlantic University</strong> who genuinely loves building things that matter. From shipping production APIs at MTN Nigeria to training NLP models that help everyday Nigerians speak to technology in their own language, I care deeply about what the work actually does in the world.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-dark">See my work</a>
-      <a href="mailto:Preciousuwadone@gmail.com" class="btn btn-outline">Get in touch</a>
-    </div>
+  <p class="eyebrow">LAGOS, NIGERIA · SOFTWARE ENGINEER · CLOUD &amp; AI</p>
+  <h1 class="hero-name">Precious <span>Uwadone</span></h1>
+  <p class="hero-bio">
+    Final-year Computer Science student at <strong>Pan-Atlantic University</strong>, building at the intersection of AI/ML and full-stack engineering. I've shipped production APIs at MTN Nigeria, built a credit-scoring model for a hackathon on Nomba's payment rails, and I'm now training NLP models that let Nigerians speak to enterprise software in the language they actually use.
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-dark">See my work</a>
+    <a href="mailto:Preciousuwadone@gmail.com" class="btn btn-outline">Get in touch</a>
   </div>
-  <div class="hero-right">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-num">9<em>+</em></div>
-        <div class="stat-label">Projects shipped</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">3<em>×</em></div>
-        <div class="stat-label">Azure certified</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">2<em>×</em></div>
-        <div class="stat-label">Industry internships</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">24<em>h</em></div>
-        <div class="stat-label">Hackathon shipped</div>
-      </div>
-  </div>
+  <div class="stats-grid">
+    <div><div class="stat-num">6<span>+</span></div><div class="stat-label">Projects shipped</div></div>
+    <div><div class="stat-num">3<span>×</span></div><div class="stat-label">Azure certified</div></div>
+    <div><div class="stat-num">2<span>×</span></div><div class="stat-label">Industry internships</div></div>
+    <div><div class="stat-num">74.76</div><div class="stat-label">BLEU score, Linguix-NG</div></div>
   </div>
 </div>
 
 <!-- SKILLS -->
 <section id="skills">
-  <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">What I <em>bring</em></h2></div>
-  <div class="skills-layout">
+  <div class="sec-head">
+    <div class="sec-marker"></div>
+    <div><p class="sec-label">Capabilities</p><h2 class="sec-title">What I bring</h2></div>
+  </div>
+  <div class="skills-grid">
     <div>
       <div class="skill-group">
         <div class="skill-group-title">Cloud &amp; AI</div>
-        <div class="skill-bar-row">
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Azure (AI, Data, Fundamentals)</span><span>Expert</span></div>
-            <div class="skill-track"><div class="skill-fill accent" style="--w:0.92" data-w="0.92"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>NLP &amp; Machine Learning</span><span>Proficient</span></div>
-            <div class="skill-track"><div class="skill-fill accent" style="--w:0.78" data-w="0.78"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>AWS DevOps</span><span>Learning</span></div>
-            <div class="skill-track"><div class="skill-fill accent" style="--w:0.55" data-w="0.55"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Generative AI / LLMs</span><span>Proficient</span></div>
-            <div class="skill-track"><div class="skill-fill accent" style="--w:0.75" data-w="0.75"></div></div>
-          </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Azure (AI, Data, Fundamentals)</span><span>Expert</span></div>
+          <div class="skill-track"><div class="skill-fill accent" style="width:92%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>NLP &amp; machine learning</span><span>Proficient</span></div>
+          <div class="skill-track"><div class="skill-fill accent" style="width:78%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Generative AI / LLMs</span><span>Proficient</span></div>
+          <div class="skill-track"><div class="skill-fill accent" style="width:75%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>AWS DevOps</span><span>Learning</span></div>
+          <div class="skill-track"><div class="skill-fill accent" style="width:55%"></div></div>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Backend &amp; APIs</div>
-        <div class="skill-bar-row">
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Node.js / TypeScript</span><span>Strong</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.88"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Python / Flask</span><span>Strong</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.85"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>REST API design &amp; auth</span><span>Strong</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.87"></div></div>
-          </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Node.js / TypeScript</span><span>Strong</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:88%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Python / Flask</span><span>Strong</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>REST API design &amp; auth</span><span>Strong</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:87%"></div></div>
         </div>
       </div>
     </div>
     <div>
       <div class="skill-group">
         <div class="skill-group-title">Frontend</div>
-        <div class="skill-bar-row">
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>React.js / TypeScript</span><span>Strong</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.82"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Tailwind CSS / shadcn</span><span>Proficient</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.78"></div></div>
-          </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>React.js / TypeScript</span><span>Strong</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:82%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Tailwind CSS / shadcn</span><span>Proficient</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:78%"></div></div>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Systems &amp; Tools</div>
-        <div class="skill-bar-row">
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Rust / bare-metal systems</span><span>Intermediate</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.65"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>C++ / OpenGL</span><span>Intermediate</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.62"></div></div>
-          </div>
-          <div class="skill-bar-item">
-            <div class="skill-bar-label"><span>Docker / Git / Agile</span><span>Strong</span></div>
-            <div class="skill-track"><div class="skill-fill" data-w="0.83"></div></div>
-          </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Rust / bare-metal systems</span><span>Intermediate</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>C++ / OpenGL</span><span>Intermediate</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:62%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Docker / Git / Agile</span><span>Strong</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:83%"></div></div>
         </div>
       </div>
       <div class="tag-cloud">
-        <span class="chip">OpenAI API</span>
-        <span class="chip">n8n</span>
-        <span class="chip">Firebase</span>
-        <span class="chip">MongoDB</span>
-        <span class="chip">Redis</span>
-        <span class="chip">Java</span>
-        <span class="chip">HuggingFace</span>
-        <span class="chip">QEMU</span>
-        <span class="chip">Vercel</span>
-        <span class="chip">Commitizen</span>
+        <span class="chip">OpenAI API</span><span class="chip">n8n</span><span class="chip">Firebase</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Java</span><span class="chip">HuggingFace</span><span class="chip">Nomba API</span><span class="chip">QEMU</span>
       </div>
     </div>
   </div>
@@ -346,312 +281,211 @@ footer{padding:5rem 3rem;border-top:1px solid var(--border);display:grid;grid-te
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Work <em>Experience</em></h2></div>
-  <div class="timeline">
+  <div class="sec-head">
+    <div class="sec-marker"></div>
+    <div><p class="sec-label">Career</p><h2 class="sec-title">Work experience</h2></div>
+  </div>
 
-    <div class="tl-item active">
-      <div class="tl-dot"></div>
-      <div class="tl-meta">
-        <span class="tl-date">Jul 2025 – Oct 2025 &nbsp;·&nbsp; Remote</span>
-        <span class="badge intern">Internship</span>
-      </div>
-      <div class="tl-role">Software Development Intern</div>
-      <div class="tl-org">Infoverse Ed-Tech</div>
-      <ul class="tl-points">
-        <li>Built the full backend of an LMS platform from scratch using Node.js, TypeScript and Express, covering everything from auth to course management.</li>
-        <li>Designed a JWT role system with three tiers (student, instructor, admin) so each user type sees only what they should.</li>
-        <li>Set up Dotenv Vault for secure environment management and standardised the team's Git workflow with Commitizen and ESLint.</li>
-        <li>Handed over a codebase ready for production, with scalability patterns already in place.</li>
+  <div class="exp-item">
+    <div>
+      <div class="exp-date">Jul – Oct 2025<br>Remote</div>
+      <span class="exp-badge">Internship</span>
+    </div>
+    <div>
+      <div class="role">Software Development Intern</div>
+      <div class="org">Infoverse Ed-Tech</div>
+      <ul class="exp-points">
+        <li>Built the full backend of an LMS platform from scratch : auth, roles and course management using Node.js, TypeScript and Express.</li>
+        <li>Designed a three-tier JWT role system (student, instructor, admin) and standardised the team's Git workflow.</li>
+        <li>Handed over a production-ready codebase with scalability patterns already in place.</li>
       </ul>
     </div>
+  </div>
 
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-meta">
-        <span class="tl-date">Jul 2024 – Oct 2024 &nbsp;·&nbsp; Lagos, Nigeria</span>
-        <span class="badge intern">Internship</span>
-      </div>
-      <div class="tl-role">Software Testing &amp; Project Management Intern</div>
-      <div class="tl-org">MTN Nigeria</div>
-      <ul class="tl-points">
-        <li>Wrote test cases that pushed application coverage up by 30% across the board.</li>
-        <li>Sat in on Agile ceremonies and worked directly with developers and Scrum Masters to close gaps between what was built and what was specified.</li>
-        <li>Ran backlog grooming sessions and contributed UI/UX feedback during requirements gathering with business analysts.</li>
-        <li>Walked away with an achievement award at the end of the placement.</li>
+  <div class="exp-item">
+    <div>
+      <div class="exp-date">Jul – Oct 2024<br>Lagos, Nigeria</div>
+      <span class="exp-badge">Internship</span>
+    </div>
+    <div>
+      <div class="role">Software Testing &amp; Project Management Intern</div>
+      <div class="org">MTN Nigeria</div>
+      <ul class="exp-points">
+        <li>Wrote test cases that pushed application coverage up 30% and worked with Agile teams to close spec-to-build gaps.</li>
+        <li>Ran backlog grooming and contributed UI/UX feedback during requirements gathering.</li>
+        <li>Received an achievement award at the end of the placement.</li>
       </ul>
     </div>
-
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">Things I've <em>built</em></h2></div>
+  <div class="sec-head">
+    <div class="sec-marker"></div>
+    <div><p class="sec-label">Selected work</p><h2 class="sec-title">Things I've built</h2></div>
+  </div>
   <div class="projects-grid">
 
-    <!-- FEATURED: Linguix-NG -->
     <div class="proj-card featured">
-      <div>
-        <div class="proj-header">
-          <span class="proj-num">001</span>
-          <div class="proj-badges"><span class="proj-badge active">Active · Final Year</span></div>
-        </div>
-        <div class="proj-title">Linguix-NG &mdash; Intelligent Normalization Middleware</div>
-        <p class="proj-desc">
-          More than 75 million Nigerians speak Pidgin every day but the enterprise platforms they rely on for banking and healthcare are written for formal Western English. That mismatch means real people get locked out of real services. Linguix-NG sits between the user and the API and translates naturally spoken Nigerian language into standard English in real time, with zero changes needed on the backend side.
-        </p>
-        <div class="proj-stack">
-          <span class="proj-tag">Python</span><span class="proj-tag">NLP</span><span class="proj-tag">Transformers</span><span class="proj-tag">HuggingFace</span><span class="proj-tag">Nigerian Pidgin</span><span class="proj-tag">REST API</span>
-        </div>
+      <div class="proj-header">
+        <div class="proj-title">Linguix-NG : Intelligent Normalization Middleware</div>
+        <span class="proj-badge active">Active · Final Year</span>
       </div>
-      <div>
-        <ul class="proj-highlights">
-          <li>Curated a parallel corpus pairing Nigerian Pidgin and Yoruba-influenced English with formal equivalents, a dataset that did not exist before this project.</li>
-          <li>Hybrid architecture: rule-based lexical mapping handles common substitutions fast, while a Transformer model catches the nuanced cases.</li>
-          <li>Middleware deployment means it plugs into any FinTech or HealthTech API without touching the downstream codebase.</li>
-          <li>Contributing open benchmarks for Nigerian language normalisation to advance African NLP research beyond this project.</li>
-        </ul>
-        <span class="proj-link" style="cursor:default;color:var(--green)">● In progress</span>
-      </div>
+      <p class="proj-desc">75M+ Nigerians speak Pidgin daily, but enterprise banking and healthcare platforms are built for formal English. Linguix-NG sits between user and API, translating Pidgin into standard English in real time, no backend changes required. Currently hitting a 74.76 BLEU score against a target of 50.</p>
+      <ul class="proj-highlights">
+        <li>Curated a Pidgin-to-formal-English parallel corpus that didn't previously exist.</li>
+        <li>Hybrid architecture: fast rule-based mapping plus a Transformer model for nuanced cases.</li>
+      </ul>
+      <div class="proj-stack"><span class="proj-tag">Python</span><span class="proj-tag">NLP</span><span class="proj-tag">Transformers</span><span class="proj-tag">HuggingFace</span><span class="proj-tag">REST API</span></div>
     </div>
 
-    <!-- SmartStock -->
     <div class="proj-card">
       <div class="proj-header">
-        <span class="proj-num">002</span>
-        <div class="proj-badges"><span class="proj-badge hack">Hackathon · Ongoing</span></div>
+        <div class="proj-title">SmartStock : AI Digital Credit Book</div>
+        <span class="proj-badge hack">Nomba Hackathon 2026</span>
       </div>
-      <div class="proj-title">SmartStock &mdash; AI-Powered Digital Credit Book</div>
-      <p class="proj-desc">Started as a hackathon build, now an active solo project. SmartStock helps Nigerian small business owners track customer credit, predict who's likely to default, and automate collection through Nomba's payment infrastructure &mdash; turning a paper credit book into a running risk model.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">React</span><span class="proj-tag">Vite</span><span class="proj-tag">Flask</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">JWT</span><span class="proj-tag">scikit-learn</span><span class="proj-tag">Nomba API</span>
-      </div>
-      <div style="display:flex;gap:1rem;margin-top:auto">
+      <p class="proj-desc">Replaces paper credit ledgers for Nigerian shop owners. Each customer gets a Nomba virtual account; a Random Forest model scores default risk; webhooks confirm payments in real time.</p>
+      <div class="proj-note">Built solo. Fixed a real production issue: Railway blocks outbound SMTP, so reminder emails moved to the Resend API.</div>
+      <div class="proj-stack"><span class="proj-tag">React</span><span class="proj-tag">Flask</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">scikit-learn</span><span class="proj-tag">Nomba API</span></div>
+      <div class="proj-links">
         <a href="https://smart-stock-frontend.up.railway.app/" class="proj-link" target="_blank">Live demo ↗</a>
         <a href="https://github.com/Preciousuwadone/Smart-stock" class="proj-link" target="_blank">GitHub ↗</a>
       </div>
     </div>
 
-    <!-- AURA -->
     <div class="proj-card">
       <div class="proj-header">
-        <span class="proj-num">003</span>
-        <div class="proj-badges"><span class="proj-badge hack">Hackathon · 24 h</span></div>
+        <div class="proj-title">AURA : AI HR Co-Pilot</div>
+        <span class="proj-badge hack">Hackathon · 24h</span>
       </div>
-      <div class="proj-title">AURA &mdash; AI-Powered HR Analytics</div>
-      <p class="proj-desc">Built in 24 hours for a hackathon. AURA helps African SMEs make sense of messy, fragmented employee data by cleaning it, surfacing performance insights and flagging attrition risk before it becomes a problem.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">n8n</span><span class="proj-tag">OpenAI API</span><span class="proj-tag">Google Sheets</span><span class="proj-tag">Slack</span>
-      </div>
-      <a href="https://github.com/AURA-HR-AI/AURAVersion1" class="proj-link" target="_blank">View on GitHub ↗</a>
+      <p class="proj-desc">Built with a 4-person team in 24 hours. One dashboard combining performance analytics, attrition-risk prediction, and automated recruitment/onboarding, priced Free → Pro → Enterprise.</p>
+      <div class="proj-note">Role: Product Engineer &amp; AI Developer, alongside a Lead AI Engineer and backend/PM teammates.</div>
+      <div class="proj-stack"><span class="proj-tag">React</span><span class="proj-tag">TypeScript</span><span class="proj-tag">n8n</span><span class="proj-tag">OpenAI API</span></div>
+      <div class="proj-links"><a href="https://github.com/AURA-HR-AI/AURAVersion1" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
-    <!-- Privacy Simulator -->
     <div class="proj-card">
       <div class="proj-header">
-        <span class="proj-num">004</span>
-        <div class="proj-badges"><span class="proj-badge default">Full-Stack</span></div>
+        <div class="proj-title">Digital Privacy Risk Simulator</div>
+        <span class="proj-badge default">Full-Stack · Cloud</span>
       </div>
-      <div class="proj-title">Digital Privacy Risk Simulator</div>
-      <p class="proj-desc">A cloud-ready app that walks users through a survey and scores their digital privacy exposure using a custom rule-based risk engine. Dockerised Flask backend, React 19 frontend with Chart.js visualisations.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">Python</span><span class="proj-tag">Flask</span><span class="proj-tag">React 19</span><span class="proj-tag">Firebase</span><span class="proj-tag">Docker</span>
-      </div>
-      <a href="https://github.com/Preciousuwadone/digital_privacy-simulator-ng" class="proj-link" target="_blank">View on GitHub ↗</a>
+      <p class="proj-desc">A short survey on password reuse and credential hygiene, scored by a rule-based Flask engine into Low/Medium/High risk. Submissions are stored anonymously in Firestore and charted over time on the frontend.</p>
+      <div class="proj-stack"><span class="proj-tag">Python</span><span class="proj-tag">Flask</span><span class="proj-tag">React</span><span class="proj-tag">Firestore</span></div>
+      <div class="proj-links"><a href="https://github.com/Preciousuwadone/digital_privacy-simulator-ng" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
-    <!-- InfoVerse LMS -->
     <div class="proj-card">
       <div class="proj-header">
-        <span class="proj-num">005</span>
-        <div class="proj-badges"><span class="proj-badge default">Backend · Team</span></div>
+        <div class="proj-title">Bare-Metal OS Kernel in Rust</div>
+        <span class="proj-badge default">Systems</span>
       </div>
-      <div class="proj-title">InfoVerse LMS Backend</div>
-      <p class="proj-desc">Full server-side infrastructure for a Learning Management System covering auth, course management, enrollment and a full admin panel. Built during the Infoverse internship and handed over production-ready.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">Node.js</span><span class="proj-tag">TypeScript</span><span class="proj-tag">Express</span><span class="proj-tag">MongoDB</span><span class="proj-tag">Redis</span>
-      </div>
-      <a href="https://github.com/InfoverseDigitalEd/backend" class="proj-link" target="_blank">View on GitHub ↗</a>
+      <p class="proj-desc">A no-std, no-main x86-64 kernel that boots via BIOS and UEFI, writes directly to VGA framebuffer memory and runs in QEMU via a custom Cargo build pipeline.</p>
+      <div class="proj-stack"><span class="proj-tag">Rust</span><span class="proj-tag">x86-64</span><span class="proj-tag">QEMU</span></div>
+      <div class="proj-links"><a href="https://github.com/Preciousuwadone/p.uwadonecsc308" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
-    <!-- OS Kernel -->
     <div class="proj-card">
       <div class="proj-header">
-        <span class="proj-num">006</span>
-        <div class="proj-badges"><span class="proj-badge default">Systems</span></div>
+        <div class="proj-title">School Cafeteria Management System</div>
+        <span class="proj-badge default">Desktop App</span>
       </div>
-      <div class="proj-title">Bare-Metal OS Kernel in Rust</div>
-      <p class="proj-desc">A no-std, no-main x86-64 kernel written in Rust that boots via both BIOS and UEFI, writes directly to VGA framebuffer memory and launches in QEMU via a custom Cargo build pipeline.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">Rust</span><span class="proj-tag">x86-64</span><span class="proj-tag">BIOS/UEFI</span><span class="proj-tag">QEMU</span>
-      </div>
-      <a href="https://github.com/Preciousuwadone/p.uwadonecsc308" class="proj-link" target="_blank">View on GitHub ↗</a>
-    </div>
-
-    <!-- Portfolio -->
-    <div class="proj-card">
-      <div class="proj-header">
-        <span class="proj-num">007</span>
-        <div class="proj-badges"><span class="proj-badge default">Frontend · Live</span></div>
-      </div>
-      <div class="proj-title">Personal Portfolio Website</div>
-      <p class="proj-desc">A production-grade portfolio site built with React 18 and TypeScript, deployed to Vercel with automated CI/CD from GitHub. Responsive dark-mode UI, full SEO setup and Open Graph tags.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">React 18</span><span class="proj-tag">TypeScript</span><span class="proj-tag">Tailwind</span><span class="proj-tag">Vite</span>
-      </div>
-      <div style="display:flex;gap:1rem;margin-top:auto">
-        <a href="https://csc-419-portfolio-one.vercel.app" class="proj-link" target="_blank">Live site ↗</a>
-        <a href="https://github.com/Preciousuwadone/CSC-419-PORTFOLIO" class="proj-link" target="_blank">GitHub ↗</a>
-      </div>
-    </div>
-
-    <!-- Cafeteria -->
-    <div class="proj-card">
-      <div class="proj-header">
-        <span class="proj-num">008</span>
-        <div class="proj-badges"><span class="proj-badge default">Desktop App</span></div>
-      </div>
-      <div class="proj-title">School Cafeteria Management System</div>
-      <p class="proj-desc">A Java Swing desktop app with role-based access for Admin, Cashier and Kitchen Staff. Handles real-time attendance logging with timestamps, full audit trails and CSV persistence.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">Java</span><span class="proj-tag">Swing</span><span class="proj-tag">NetBeans</span><span class="proj-tag">Apache Ant</span>
-      </div>
-      <a href="https://github.com/Preciousuwadone/OOP-PROJECT" class="proj-link" target="_blank">View on GitHub ↗</a>
-    </div>
-
-    <!-- OpenGL -->
-    <div class="proj-card">
-      <div class="proj-header">
-        <span class="proj-num">009</span>
-        <div class="proj-badges"><span class="proj-badge default">Graphics</span></div>
-      </div>
-      <div class="proj-title">3D Graphics Suite — OpenGL &amp; SDL2</div>
-      <p class="proj-desc">A set of C++ graphics projects covering real-time 3D rendering, GLSL shaders, texture mapping, depth testing and an SDL2 interactive scene switcher with keyboard-driven 2D rendering.</p>
-      <div class="proj-stack">
-        <span class="proj-tag">C++</span><span class="proj-tag">OpenGL 3.3</span><span class="proj-tag">SDL2</span><span class="proj-tag">GLSL</span><span class="proj-tag">GLM</span>
-      </div>
-      <a href="https://github.com/Preciousuwadone/p.uwadonecsc212" class="proj-link" target="_blank">View on GitHub ↗</a>
+      <p class="proj-desc">A Java Swing app with role-based access for Admin, Cashier and Kitchen Staff, real-time attendance logging, audit trails and CSV persistence.</p>
+      <div class="proj-stack"><span class="proj-tag">Java</span><span class="proj-tag">Swing</span><span class="proj-tag">Apache Ant</span></div>
+      <div class="proj-links"><a href="https://github.com/Preciousuwadone/OOP-PROJECT" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
   </div>
 </section>
 
 <!-- COMMUNITY -->
-<section id="community">
-  <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Community &amp; <em>Involvement</em></h2></div>
-  <div class="community-row">
+<section id="more">
+  <div class="sec-head">
+    <div class="sec-marker"></div>
+    <div><p class="sec-label">Beyond the codebase</p><h2 class="sec-title">Community &amp; involvement</h2></div>
+  </div>
+  <div class="community-grid">
     <div class="comm-card">
-      <div class="comm-org">AWS &nbsp;·&nbsp; Active Member</div>
-      <div class="comm-role">AWS Nigerian DevOps Study Group</div>
-      <p class="comm-desc">Regularly engage with Nigeria's AWS DevOps learning community, exploring cloud infrastructure, CI/CD pipelines and containerisation alongside engineers from across the country.</p>
+      <div class="comm-org">AWS</div>
+      <div class="comm-title">Nigerian DevOps Study Group [Active Member]</div>
+      <p class="comm-desc">I meet regularly with this community of Nigerian engineers to work through cloud infrastructure, CI/CD pipelines and containerisation problems together, and to stay current on tools I don't get to use day-to-day at school or work.</p>
       <div class="comm-date">Ongoing</div>
     </div>
     <div class="comm-card">
-      <div class="comm-org">Pan-Atlantic University &nbsp;·&nbsp; Volunteer</div>
-      <div class="comm-role">Feedback &amp; Communication Team</div>
-      <p class="comm-desc">Channelled student feedback to improve campus communication and made sure student voices actually reached decision-makers.</p>
+      <div class="comm-org">Pan-Atlantic University</div>
+      <div class="comm-title">Feedback &amp; Communication Team [Volunteer]</div>
+      <p class="comm-desc">Served as a channel between students and the administration, collecting recurring concerns from my peers and making sure they actually reached the people who could act on them.</p>
       <div class="comm-date">Mar 2025 – Jan 2026</div>
     </div>
     <div class="comm-card">
-      <div class="comm-org">Pan-Atlantic University &nbsp;·&nbsp; Volunteer</div>
-      <div class="comm-role">Social Media &amp; Publicity Team</div>
-      <p class="comm-desc">Ran the university's social media presence during events and announcements, keeping the student community informed and engaged.</p>
+      <div class="comm-org">Pan-Atlantic University</div>
+      <div class="comm-title">Social Media &amp; Publicity Team [Volunteer]</div>
+      <p class="comm-desc">Ran the university's social media presence during major campus events and announcements, keeping the wider student body informed and engaged in real time.</p>
       <div class="comm-date">Nov 2024 – Jan 2026</div>
     </div>
   </div>
-</section>
 
-<!-- CERTIFICATIONS -->
-<section id="certs">
-  <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title"><em>Certifications</em> &amp; Awards</h2></div>
-  <div class="certs-grid">
-    <div class="cert-card">
-      <div class="cert-issuer">Microsoft</div>
-      <div class="cert-name">Azure AI Fundamentals (AI-900)</div>
-      <div class="cert-date">Sep 2024</div>
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-card-title">Certifications &amp; Awards</div>
+      <div class="info-row">
+        <div class="info-main"><div class="info-title">Azure AI Fundamentals (AI-900)</div><div class="info-issuer">Microsoft</div></div>
+        <div class="info-date">Sep 2024</div>
+      </div>
+      <div class="info-row">
+        <div class="info-main"><div class="info-title">Azure Data Fundamentals (DP-900)</div><div class="info-issuer">Microsoft</div></div>
+        <div class="info-date">Oct 2024</div>
+      </div>
+      <div class="info-row">
+        <div class="info-main"><div class="info-title">Azure Fundamentals (AZ-900)</div><div class="info-issuer">Microsoft</div></div>
+        <div class="info-date">Sep 2024</div>
+      </div>
+      <div class="info-row">
+        <div class="info-main"><div class="info-title">Dell GenAI Foundations</div><div class="info-issuer">Dell Technologies</div></div>
+        <div class="info-date">Sep 2024</div>
+      </div>
+      <div class="info-row award-row">
+        <div class="info-main"><div class="info-title">Certificate of Achievement</div><div class="info-issuer">MTN Nigeria · Award</div></div>
+        <div class="info-date">Nov 2024</div>
+      </div>
     </div>
-    <div class="cert-card">
-      <div class="cert-issuer">Microsoft</div>
-      <div class="cert-name">Azure Data Fundamentals (DP-900)</div>
-      <div class="cert-date">Oct 2024</div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-issuer">Microsoft</div>
-      <div class="cert-name">Azure Fundamentals (AZ-900)</div>
-      <div class="cert-date">Sep 2024</div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-issuer">Dell Technologies</div>
-      <div class="cert-name">Dell GenAI Foundations</div>
-      <div class="cert-date">Sep 2024</div>
-    </div>
-    <div class="cert-card award">
-      <div class="cert-issuer">MTN Nigeria &nbsp;·&nbsp; Award</div>
-      <div class="cert-name">Certificate of Achievement</div>
-      <div class="cert-date">Nov 2024</div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="sec-head"><span class="sec-num">06</span><h2 class="sec-title"><em>Education</em></h2></div>
-  <div class="edu-row">
-    <div class="edu-card">
-      <div class="edu-degree">B.Sc. Computer Science</div>
-      <div class="edu-school">Pan-Atlantic University (PAU) &nbsp;·&nbsp; Lagos, Nigeria</div>
-      <div class="edu-date">Oct 2022 – Jul 2026</div>
-    </div>
-    <div class="edu-card">
-      <div class="edu-degree">High School Diploma</div>
-      <div class="edu-school">Caleb British International School</div>
-      <div class="edu-date">Sep 2019 – Jul 2022</div>
+    <div class="info-card">
+      <div class="info-card-title">Education</div>
+      <div class="info-row">
+        <div class="info-main"><div class="info-title">B.Sc. Computer Science</div><div class="info-issuer">Pan-Atlantic University, Lagos</div></div>
+        <div class="info-date">2022 – 2026</div>
+      </div>
+      <div class="info-row">
+        <div class="info-main"><div class="info-title">High School Diploma</div><div class="info-issuer">Caleb British Int'l School</div></div>
+        <div class="info-date">2019 – 2022</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer id="contact">
-  <div>
-    <h2 class="footer-tagline">Let's build<br>something <em>meaningful</em><br>together.</h2>
-    <div class="footer-links">
-      <a href="mailto:Preciousuwadone@gmail.com" class="footer-link">Email</a>
-      <a href="https://linkedin.com/in/precious-uwadone-b42bba242" class="footer-link" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Preciousuwadone" class="footer-link" target="_blank">GitHub</a>
+  <div class="footer-inner">
+    <div>
+      <h2 class="tagline">Let's build something <span>meaningful</span> together.</h2>
+      <div class="footer-links">
+        <a href="mailto:Preciousuwadone@gmail.com" class="footer-link">Email</a>
+        <a href="https://linkedin.com/in/precious-uwadone-b42bba242" class="footer-link" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Preciousuwadone" class="footer-link" target="_blank">GitHub</a>
+      </div>
     </div>
-  </div>
-  <div>
-    <p class="footer-copy">
+    <div class="footer-copy">
       Precious Uwadone<br>
-      Lagos, Nigeria &nbsp;·&nbsp; Pan-Atlantic University<br>
+      Lagos, Nigeria · Pan-Atlantic University<br>
       Preciousuwadone@gmail.com<br><br>
-      &copy; 2026 &nbsp;·&nbsp; Built with care
-    </p>
+      © 2026 · Built with care
+    </div>
   </div>
 </footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMenu(){
-  document.getElementById('mobileMenu').classList.remove('open');
-}
-
-// Animate skill bars on scroll
-const bars = document.querySelectorAll('.skill-fill');
-const obs = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const el = e.target;
-      const w = el.dataset.w;
-      el.style.transform = 'scaleX('+w+')';
-      el.classList.add('animated');
-      obs.unobserve(el);
-    }
-  });
-},{threshold:0.3});
-bars.forEach(b=>obs.observe(b));
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
 </script>
 </body>
 </html>
