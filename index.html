@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Precious Uwadone : Software Engineer</title>
-<meta name="description" content="Precious Uwadone : Software Engineer, Product-Minded builder based in Lagos, Nigeria."/>
+<meta name="description" content="Precious Uwadone : Software Engineer based in Lagos, Nigeria [Backend, Cloud, AI.]"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -62,20 +62,18 @@ section{padding:2.75rem 2.5rem;max-width:1100px;margin:0 auto;border-top:1px sol
 .sec-label{font-size:0.78rem;font-weight:600;color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:0.15rem}
 .sec-title{font-size:clamp(1.35rem,2vw,1.65rem);font-weight:700;letter-spacing:-0.01em}
 
-/* SKILLS — bars, blue scheme */
-.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.2rem}
-.skill-group{margin-bottom:1.5rem}
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:2.2rem}
+.skill-group{margin-bottom:1.6rem}
+.skill-group:last-child{margin-bottom:0}
 .skill-group-title{font-size:0.82rem;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.9rem;display:flex;align-items:center;gap:0.55rem}
 .skill-group-title::before{content:'';display:block;width:12px;height:3px;background:var(--blue);border-radius:1px}
-.skill-bar-item{margin-bottom:0.85rem}
-.skill-bar-item:last-child{margin-bottom:0}
-.skill-bar-label{display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:0.4rem}
-.skill-bar-label span:last-child{color:var(--muted);font-size:0.82rem}
-.skill-track{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
-.skill-fill{height:100%;border-radius:3px;background:var(--ink)}
-.skill-fill.accent{background:var(--blue)}
-.tag-cloud{display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:0.6rem}
-.chip{font-size:0.82rem;padding:0.32rem 0.7rem;border:1px solid var(--line2);border-radius:5px;color:var(--muted);background:var(--surface)}
+.skill-group.supporting .skill-group-title{color:var(--muted);font-size:0.76rem}
+.skill-group.supporting .skill-group-title::before{background:var(--line2)}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:0.5rem}
+.chip{font-size:0.86rem;padding:0.4rem 0.85rem;border:1px solid var(--line2);border-radius:6px;color:var(--ink);background:var(--surface);font-weight:500}
+.skill-group.supporting .chip{font-size:0.79rem;padding:0.32rem 0.7rem;color:var(--muted);background:transparent}
+.skill-note{font-size:0.83rem;color:var(--muted);margin-top:0.5rem;line-height:1.6}
 
 /* EXPERIENCE */
 .exp-item{display:grid;grid-template-columns:165px 1fr;gap:1.6rem;padding:1.3rem 0;border-bottom:1px solid var(--line)}
@@ -185,17 +183,17 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
 </div>
 
 <div class="hero">
-  <p class="eyebrow">LAGOS, NIGERIA · SOFTWARE ENGINEER · PRODUCT-MINDED · AI & CLOUD</p>
+  <p class="eyebrow">LAGOS, NIGERIA · BACKEND · CLOUD · AI</p>
   <h1 class="hero-name">Precious <span>Uwadone</span></h1>
   <p class="hero-bio">
-    Computer Science graduate of <strong>Pan-Atlantic University</strong>, Lagos (convocating December 2026), working across cloud, AI, and full-stack engineering with a product-minded lens. Azure-certified across AI, Data, and Fundamentals, I've shipped production backend systems at Infoverse Ed-Tech, built a credit-scoring model for a hackathon on Nomba's payment rails, and worked closely with Agile delivery teams on requirements and product testing at MTN Nigeria. I'm now training NLP models that let Nigerians speak to enterprise software in the language they actually use.
+    Software engineer building backend systems, moving toward cloud engineering, with AI as a technical specialization. Computer Science student at <strong>Pan-Atlantic University</strong>, Lagos, graduating December 2026. I've built production backend systems at Infoverse Ed-Tech, I'm Azure-certified across AI, Data, and Fundamentals, and I'm developing my cloud direction further through a Cloud IT role at MTN Nigeria. On the side, I train NLP models that let Nigerians speak to enterprise software in the language they actually use Linguix-NG, my flagship AI project.
   </p>
   <div class="hero-cta">
     <a href="#projects" class="btn btn-dark">See my work</a>
     <a href="mailto:Preciousuwadone@gmail.com" class="btn btn-outline">Get in touch</a>
   </div>
   <div class="stats-grid">
-    <div><div class="stat-num">6<span>+</span></div><div class="stat-label">Projects shipped</div></div>
+    <div><div class="stat-num">30<span>%</span></div><div class="stat-label">Test coverage increase, MTN</div></div>
     <div><div class="stat-num">3<span>×</span></div><div class="stat-label">Azure certified</div></div>
     <div><div class="stat-num">2<span>×</span></div><div class="stat-label">Industry internships</div></div>
     <div><div class="stat-num">74.76</div><div class="stat-label">BLEU score, Linguix-NG</div></div>
@@ -211,69 +209,31 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
   <div class="skills-grid">
     <div>
       <div class="skill-group">
-        <div class="skill-group-title">Cloud &amp; AI</div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Azure (AI, Data, Fundamentals)</span><span>Expert</span></div>
-          <div class="skill-track"><div class="skill-fill accent" style="width:92%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>NLP &amp; machine learning</span><span>Proficient</span></div>
-          <div class="skill-track"><div class="skill-fill accent" style="width:78%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Generative AI / LLMs</span><span>Proficient</span></div>
-          <div class="skill-track"><div class="skill-fill accent" style="width:75%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>AWS DevOps</span><span>Learning</span></div>
-          <div class="skill-track"><div class="skill-fill accent" style="width:55%"></div></div>
+        <div class="skill-group-title">Backend</div>
+        <div class="tag-cloud">
+          <span class="chip">Node.js / TypeScript</span><span class="chip">Python / Flask</span><span class="chip">REST API design &amp; auth</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Firebase</span>
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-title">Backend &amp; APIs</div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Node.js / TypeScript</span><span>Strong</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:88%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Python / Flask</span><span>Strong</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>REST API design &amp; auth</span><span>Strong</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:87%"></div></div>
+        <div class="skill-group-title">Cloud &amp; Infrastructure</div>
+        <div class="tag-cloud">
+          <span class="chip">Azure</span><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">AWS / DevOps — learning</span><span class="chip">QEMU</span><span class="chip">Cloud fundamentals</span>
         </div>
       </div>
     </div>
     <div>
       <div class="skill-group">
-        <div class="skill-group-title">Frontend</div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>React.js / TypeScript</span><span>Strong</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:82%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Tailwind CSS / shadcn</span><span>Proficient</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:78%"></div></div>
+        <div class="skill-group-title">AI</div>
+        <div class="tag-cloud">
+          <span class="chip">NLP / machine learning</span><span class="chip">Transformers</span><span class="chip">HuggingFace</span><span class="chip">Generative AI / LLMs</span><span class="chip">OpenAI API</span>
         </div>
       </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Systems &amp; Tools</div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Rust / bare-metal systems</span><span>Intermediate</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:65%"></div></div>
+      <div class="skill-group supporting">
+        <div class="skill-group-title">Also working with — Frontend &amp; Systems</div>
+        <div class="tag-cloud">
+          <span class="chip">React / TypeScript</span><span class="chip">Tailwind CSS / shadcn</span><span class="chip">Rust / bare-metal systems</span><span class="chip">C++ / OpenGL</span>
         </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>C++ / OpenGL</span><span>Intermediate</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:62%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Docker / Git / Agile</span><span>Strong</span></div>
-          <div class="skill-track"><div class="skill-fill" style="width:83%"></div></div>
-        </div>
-      </div>
-      <div class="tag-cloud">
-        <span class="chip">OpenAI API</span><span class="chip">n8n</span><span class="chip">Firebase</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Java</span><span class="chip">HuggingFace</span><span class="chip">Nomba API</span><span class="chip">QEMU</span>
+        <p class="skill-note">The projects section shows how these get used — a kernel, a desktop app, a couple of React frontends — but backend, cloud, and AI are where I'm building depth.</p>
       </div>
     </div>
   </div>
@@ -308,12 +268,12 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
       <span class="exp-badge">Internship</span>
     </div>
     <div>
-      <div class="role">Software Testing &amp; Project Management Intern</div>
+      <div class="role">Technology Intern</div>
       <div class="org">MTN Nigeria</div>
       <ul class="exp-points">
-        <li>Managed sprint backlogs and user stories in Jira alongside Agile delivery teams, closing spec-to-build gaps between requirements and engineering output.</li>
-        <li>Reviewed product flows in Figma during requirements gathering, contributing UI/UX feedback that surfaced usability issues before development started.</li>
-        <li>Wrote test cases that pushed application coverage up 30%, giving close visibility into where product specs broke down in practice.</li>
+        <li>Worked across the requirements-to-delivery pipeline: sprint backlogs and user stories in Jira, alongside Agile delivery teams.</li>
+        <li>Reviewed product flows in Figma during requirements gathering, surfacing usability issues before development started.</li>
+        <li>Wrote test cases that pushed application test coverage up 30%, gaining a close, practical view of how engineering teams ship software from spec to production.</li>
         <li>Received an achievement award at the end of the placement.</li>
       </ul>
     </div>
@@ -333,7 +293,7 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
         <div class="proj-title">Linguix-NG : Intelligent Normalization Middleware</div>
         <span class="proj-badge active">Active · Final Year</span>
       </div>
-      <p class="proj-desc">75M+ Nigerians speak Pidgin daily, but enterprise banking and healthcare platforms are built for formal English. Linguix-NG sits between user and API, translating Pidgin into standard English in real time, no backend changes required. Currently hitting a 74.76 BLEU score against a target of 50.</p>
+      <p class="proj-desc">Nigerian Pidgin is widely spoken day-to-day, but enterprise banking and healthcare platforms are built for formal English. Linguix-NG sits between user and API, translating Pidgin into standard English in real time, no backend changes required. Currently hitting a 74.76 BLEU score against a target of 50.</p>
       <ul class="proj-highlights">
         <li>Curated a Pidgin-to-formal-English parallel corpus that didn't previously exist.</li>
         <li>Hybrid architecture: fast rule-based mapping plus a Transformer model for nuanced cases.</li>
