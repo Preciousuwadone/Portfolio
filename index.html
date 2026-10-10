@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Precious Uwadone : Software Engineer</title>
-<meta name="description" content="Precious Uwadone : Software Engineer based in Lagos, Nigeria [Backend, Cloud, AI.]"/>
+<title>Precious Uwadone : Backend and Cloud Engineer</title>
+<meta name="description" content="Precious Uwadone, software engineer based in Lagos, Nigeria. Backend, Cloud, AI."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#161a22;
-  --paper:#ffffff;
-  --paper2:#f4f5f7;
-  --surface:#f9fafb;
-  --line:#e3e5ea;
-  --line2:#d1d5db;
-  --blue:#2452d9;
-  --blue-dim:#eaefff;
-  --muted:#5c6472;
+  --ink:#2b1a1e;
+  --paper:#f7f1e6;
+  --paper2:#efe6d4;
+  --surface:#fbf7ee;
+  --line:#ded1bc;
+  --line2:#c9b8a0;
+  --blue:#6b1d2e;
+  --blue-dim:#f1e0dc;
+  --muted:#6d5b58;
 }
 html{scroll-behavior:smooth;font-size:17px}
 body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
-h1,h2,.role,.proj-title,.logo,.tagline{font-family:'Space Grotesk',sans-serif}
+h1,h2,.role,.proj-title,.logo,.tagline{font-family:'Fraunces',Georgia,serif}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0.95rem 2.5rem;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0.95rem 2.5rem;background:rgba(247,241,230,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .logo{font-size:1.1rem;font-weight:700;color:var(--ink);text-decoration:none}
 .logo b{color:var(--blue)}
 .nav-links{display:flex;gap:1.7rem;list-style:none}
@@ -40,18 +40,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* HERO */
 .hero{padding:6.5rem 2.5rem 2.75rem;max-width:1100px;margin:0 auto}
 .eyebrow{font-size:0.86rem;font-weight:600;color:var(--blue);letter-spacing:0.02em;margin-bottom:0.9rem}
-.hero-name{font-size:clamp(2.2rem,4.6vw,3.5rem);font-weight:700;line-height:1.08;letter-spacing:-0.02em;margin-bottom:1rem}
+.hero-name{font-size:clamp(3.2rem,9vw,6.5rem);font-weight:700;line-height:1;letter-spacing:-0.03em;margin-bottom:1.2rem}
 .hero-name span{color:var(--blue)}
-.hero-bio{font-size:1.03rem;color:var(--muted);max-width:66ch;line-height:1.75;margin-bottom:1.6rem}
+.hero-bio{font-size:1.05rem;color:var(--muted);max-width:68ch;line-height:1.75;margin-bottom:1.1rem}
 .hero-bio strong{color:var(--ink);font-weight:600}
+.hero-strength{font-size:0.95rem;color:var(--muted);max-width:68ch;line-height:1.7;margin-bottom:1.6rem;background:var(--paper2);border-left:3px solid var(--blue);padding:0.7rem 1rem;border-radius:0 5px 5px 0}
 .hero-cta{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:2rem}
 .btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.68rem 1.5rem;border-radius:7px;font-size:0.92rem;font-weight:600;text-decoration:none;transition:all 0.2s;cursor:pointer}
-.btn-dark{background:var(--ink);color:#fff}
-.btn-dark:hover{background:var(--blue)}
+.btn-dark{background:var(--blue);color:#f7f1e6}
+.btn-dark:hover{background:var(--ink)}
 .btn-outline{border:1.5px solid var(--line2);color:var(--ink)}
 .btn-outline:hover{border-color:var(--blue);color:var(--blue)}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;border-top:1px solid var(--line);padding-top:1.4rem}
-.stat-num{font-family:'Space Grotesk',sans-serif;font-size:1.85rem;font-weight:700;letter-spacing:-0.02em;line-height:1}
+.stat-num{font-family:'Fraunces',Georgia,serif;font-size:1.85rem;font-weight:700;letter-spacing:-0.02em;line-height:1}
 .stat-num span{color:var(--blue)}
 .stat-label{font-size:0.84rem;color:var(--muted);margin-top:0.3rem}
 
@@ -85,39 +86,43 @@ section{padding:2.75rem 2.5rem;max-width:1100px;margin:0 auto;border-top:1px sol
 .exp-points{list-style:none}
 .exp-points li{font-size:0.92rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.35rem;line-height:1.6}
 .exp-points li::before{content:'•';position:absolute;left:0;color:var(--blue);font-weight:700}
+.sub-role{margin:0.9rem 0;padding-left:1rem;border-left:2px solid var(--line2)}
+.sub-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:0.45rem}
+.sub-title{font-size:0.96rem;font-weight:600;color:var(--ink)}
+.sub-date{font-size:0.8rem;color:var(--muted)}
 
 /* PROJECTS */
-#projects{background:var(--paper2)}
+#projects{background:var(--paper2);max-width:none;padding-left:0;padding-right:0}
+#projects .proj-inner{max-width:1100px;margin:0 auto;padding:0 2.5rem}
 .projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .proj-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem 1.5rem;transition:box-shadow 0.2s,transform 0.2s;display:flex;flex-direction:column}
-.proj-card:hover{box-shadow:0 8px 20px rgba(22,26,34,0.07);transform:translateY(-1px)}
+.proj-card:hover{box-shadow:0 8px 20px rgba(43,26,30,0.08);transform:translateY(-1px)}
 .proj-card.featured{grid-column:1/-1}
 .proj-header{display:flex;justify-content:space-between;align-items:flex-start;gap:0.8rem;margin-bottom:0.55rem;flex-wrap:wrap}
-.proj-title{font-size:1.03rem;font-weight:700}
+.proj-title{font-size:1.05rem;font-weight:700}
 .proj-badge{font-size:0.73rem;font-weight:600;padding:0.18rem 0.55rem;border-radius:4px;white-space:nowrap}
 .proj-badge.active{background:var(--blue-dim);color:var(--blue)}
-.proj-badge.hack{background:#fff2e2;color:#b5620a}
+.proj-badge.hack{background:#f0dfc0;color:#7a4e10}
 .proj-badge.default{background:var(--line);color:var(--muted)}
-.proj-desc{font-size:0.89rem;color:var(--muted);line-height:1.65;margin-bottom:0.7rem;flex:1}
-.proj-highlights{list-style:none;margin-bottom:0.7rem}
+.proj-desc{font-size:0.89rem;color:var(--muted);line-height:1.65;margin-bottom:0.7rem}
+.proj-highlights{list-style:none;margin-bottom:0.8rem;flex:1}
 .proj-highlights li{font-size:0.88rem;color:var(--muted);padding-left:1.1rem;position:relative;margin-bottom:0.32rem;line-height:1.6}
 .proj-highlights li::before{content:'•';position:absolute;left:0;color:var(--blue);font-weight:700}
-.proj-note{font-size:0.83rem;color:var(--muted);background:var(--paper2);border-left:3px solid var(--blue);padding:0.6rem 0.8rem;border-radius:0 5px 5px 0;margin-bottom:0.7rem;line-height:1.55}
 .proj-stack{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:0.7rem}
 .proj-tag{font-size:0.74rem;padding:0.2rem 0.55rem;border:1px solid var(--line2);border-radius:4px;color:var(--muted)}
 .proj-links{display:flex;gap:1.1rem;margin-top:auto}
 .proj-link{font-size:0.85rem;font-weight:600;color:var(--blue);text-decoration:none}
 .proj-link:hover{text-decoration:underline}
 
-/* COMMUNITY — cards with real write-ups */
+/* COMMUNITY */
 .community-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:2.2rem}
-.comm-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem 1.4rem}
+.comm-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem}
 .comm-org{font-size:0.78rem;font-weight:600;color:var(--blue);margin-bottom:0.35rem}
-.comm-title{font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;line-height:1.35}
+.comm-title{font-family:'Fraunces',Georgia,serif;font-size:0.98rem;font-weight:700;margin-bottom:0.5rem;line-height:1.35}
 .comm-desc{font-size:0.85rem;color:var(--muted);line-height:1.65;margin-bottom:0.6rem}
 .comm-date{font-size:0.78rem;color:var(--muted);font-weight:500}
 
-/* CERTS + EDUCATION — contained cards */
+/* CERTS + EDUCATION */
 .info-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1rem}
 .info-card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:1.4rem 1.5rem}
 .info-card-title{font-size:0.8rem;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.9rem;display:flex;align-items:center;gap:0.55rem}
@@ -128,17 +133,17 @@ section{padding:2.75rem 2.5rem;max-width:1100px;margin:0 auto;border-top:1px sol
 .info-main .info-title{font-size:0.88rem;font-weight:700;margin-bottom:0.12rem;line-height:1.4}
 .info-main .info-issuer{font-size:0.79rem;color:var(--muted)}
 .info-date{font-size:0.78rem;color:var(--muted);white-space:nowrap}
-.award-row .info-issuer{color:#b5620a;font-weight:600}
+.award-row .info-issuer{color:var(--blue);font-weight:600}
 
 /* FOOTER */
-footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
+footer{padding:3.5rem 2.5rem 2rem;background:#3e1220;color:#f7f1e6}
 .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr;gap:2.2rem;align-items:end}
 .tagline{font-size:clamp(1.4rem,2.8vw,2.1rem);font-weight:700;line-height:1.22;letter-spacing:-0.02em;margin-bottom:1.3rem}
-.tagline span{color:#7d9cff}
+.tagline span{color:#e9b7a8}
 .footer-links{display:flex;gap:1.2rem;flex-wrap:wrap;margin-bottom:0.9rem}
-.footer-link{font-size:0.88rem;font-weight:500;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.3);padding-bottom:2px}
-.footer-link:hover{border-color:#7d9cff;color:#7d9cff}
-.footer-copy{font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.85;text-align:right}
+.footer-link{font-size:0.88rem;font-weight:500;color:#f7f1e6;text-decoration:none;border-bottom:1px solid rgba(247,241,230,0.35);padding-bottom:2px}
+.footer-link:hover{border-color:#e9b7a8;color:#e9b7a8}
+.footer-copy{font-size:0.82rem;color:rgba(247,241,230,0.65);line-height:1.85;text-align:right}
 
 @media(max-width:900px){
   nav{padding:0.9rem 1.25rem}
@@ -146,6 +151,8 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
   .hamburger{display:flex}
   .hero{padding:6rem 1.25rem 2.25rem}
   section{padding:2.4rem 1.25rem}
+  #projects{padding-left:0;padding-right:0}
+  #projects .proj-inner{padding:0 1.25rem}
   .stats-grid{grid-template-columns:1fr 1fr;gap:1.1rem}
   .skills-grid{grid-template-columns:1fr}
   .exp-item{grid-template-columns:1fr;gap:0.5rem}
@@ -186,8 +193,9 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
   <p class="eyebrow">LAGOS, NIGERIA · BACKEND · CLOUD · AI</p>
   <h1 class="hero-name">Precious <span>Uwadone</span></h1>
   <p class="hero-bio">
-    Software engineer building backend systems, moving toward cloud engineering, with AI as a technical specialization. Computer Science student at <strong>Pan-Atlantic University</strong>, Lagos, graduating December 2026. I've built production backend systems at Infoverse Ed-Tech, I'm Azure-certified across AI, Data, and Fundamentals, and I'm developing my cloud direction further through a Cloud IT role at MTN Nigeria. On the side, I train NLP models that let Nigerians speak to enterprise software in the language they actually use Linguix-NG, my flagship AI project.
+    I build backend systems that hold up in the real world, and <strong>cloud engineering is where I want to spend my career</strong>. I am the Backend Engineer on AgroBridge Nigeria, preparing a public launch for November 2026. I have shipped APIs with Node.js, Flask and PostgreSQL, deployed them to Railway, and earned three Azure certifications. I graduate from <strong>Pan-Atlantic University</strong> in December 2026 with a Computer Science degree and a final year project that scored 74.76 BLEU on Nigerian Pidgin translation.
   </p>
+  <p class="hero-strength">My strength is taking a problem from idea to a deployed, working service, including the parts people skip, like authentication, payment webhooks and fixing what breaks in production.</p>
   <div class="hero-cta">
     <a href="#projects" class="btn btn-dark">See my work</a>
     <a href="mailto:Preciousuwadone@gmail.com" class="btn btn-outline">Get in touch</a>
@@ -211,13 +219,13 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
       <div class="skill-group">
         <div class="skill-group-title">Backend</div>
         <div class="tag-cloud">
-          <span class="chip">Node.js / TypeScript</span><span class="chip">Python / Flask</span><span class="chip">REST API design &amp; auth</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Firebase</span>
+          <span class="chip">Node.js / Express</span><span class="chip">Python / Flask</span><span class="chip">REST API design</span><span class="chip">JWT auth and role based access</span><span class="chip">Webhooks and payment integration</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">SQLite</span><span class="chip">Firestore</span><span class="chip">Swagger / Postman</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Cloud &amp; Infrastructure</div>
         <div class="tag-cloud">
-          <span class="chip">Azure</span><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">AWS / DevOps — learning</span><span class="chip">QEMU</span><span class="chip">Cloud fundamentals</span>
+          <span class="chip">Azure</span><span class="chip">Docker</span><span class="chip">Railway / Render deployments</span><span class="chip">Git / GitHub</span><span class="chip">AWS and DevOps, learning</span>
         </div>
       </div>
     </div>
@@ -225,15 +233,15 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
       <div class="skill-group">
         <div class="skill-group-title">AI</div>
         <div class="tag-cloud">
-          <span class="chip">NLP / machine learning</span><span class="chip">Transformers</span><span class="chip">HuggingFace</span><span class="chip">Generative AI / LLMs</span><span class="chip">OpenAI API</span>
+          <span class="chip">Hugging Face Transformers</span><span class="chip">PyTorch</span><span class="chip">Fine tuning MarianMT</span><span class="chip">sacrebleu evaluation</span><span class="chip">scikit-learn</span><span class="chip">LLM fallback with Groq LLaMA</span><span class="chip">OpenAI API</span><span class="chip">n8n</span>
         </div>
       </div>
       <div class="skill-group supporting">
-        <div class="skill-group-title">Also working with — Frontend &amp; Systems</div>
+        <div class="skill-group-title">Also working with</div>
         <div class="tag-cloud">
-          <span class="chip">React / TypeScript</span><span class="chip">Tailwind CSS / shadcn</span><span class="chip">Rust / bare-metal systems</span><span class="chip">C++ / OpenGL</span>
+          <span class="chip">React / Vite</span><span class="chip">Next.js / Convex</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">Rust / QEMU</span><span class="chip">C</span><span class="chip">Java</span>
         </div>
-        <p class="skill-note">The projects section shows how these get used : a kernel, a desktop app, a couple of React frontends but backend, cloud, and AI are where I'm building depth.</p>
+        <p class="skill-note">The projects section shows how these get used. Backend, cloud and AI are where I am building depth.</p>
       </div>
     </div>
   </div>
@@ -248,32 +256,67 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
 
   <div class="exp-item">
     <div>
-      <div class="exp-date">Jul – Oct 2025<br>Remote</div>
-      <span class="exp-badge">Internship</span>
+      <div class="exp-date">Jul 2026 to Ongoing</div>
+      <span class="exp-badge">Ongoing</span>
     </div>
     <div>
-      <div class="role">Software Development Intern</div>
-      <div class="org">Infoverse Ed-Tech</div>
+      <div class="role">Backend Engineer</div>
+      <div class="org">AgroBridge Nigeria</div>
       <ul class="exp-points">
-        <li>Built the full backend of an LMS platform from scratch : auth, roles and course management using Node.js, TypeScript and Express.</li>
-        <li>Designed a three-tier JWT role system (student, instructor, admin) and standardised the team's Git workflow.</li>
-        <li>Handed over a production-ready codebase with scalability patterns already in place.</li>
+        <li>Part of the backend team building AgroBridge, a marketplace where sellers list produce and buyers discover, order and pay for it.</li>
+        <li>Responsible for launch critical APIs covering authentication, profiles, produce listings, product discovery, orders, payments and price intelligence integration.</li>
+        <li>Working with the mobile and frontend teams on integration, then running end to end testing, permission checks, error handling and transaction flow testing ahead of the closed beta.</li>
+        <li>Working toward a public launch in November 2026, with backend stability and reliability as the main delivery goal.</li>
       </ul>
     </div>
   </div>
 
   <div class="exp-item">
     <div>
-      <div class="exp-date">Jul – Oct 2024<br>Lagos, Nigeria</div>
+      <div class="exp-date">Jul to Oct 2025<br>Remote</div>
+      <span class="exp-badge">Internship</span>
+    </div>
+    <div>
+      <div class="role">Software Development Intern</div>
+      <div class="org">Infoverse Digital-Ed</div>
+      <ul class="exp-points">
+        <li>Contributed to the authentication and course services of an LMS backend built with Node.js, Express and MongoDB, as part of a team of five.</li>
+        <li>Implemented JWT authentication and secure session handling, and tested and refined the login and registration endpoints.</li>
+        <li>Helped integrate the course enrollment system and worked with the Next.js frontend team on API integration.</li>
+        <li>Tested endpoints in Postman, documented them with Swagger, and applied CORS, error handling and data validation standards.</li>
+        <li>Took part in sprints, stand ups and weekly code reviews using a Git and GitHub workflow.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div>
+      <div class="exp-date">Jul to Oct 2024<br>Lagos, Nigeria · Hybrid</div>
       <span class="exp-badge">Internship</span>
     </div>
     <div>
       <div class="role">Technology Intern</div>
       <div class="org">MTN Nigeria</div>
+
+      <div class="sub-role">
+        <div class="sub-head"><span class="sub-title">Software Tester Intern</span><span class="sub-date">Sep to Oct 2024</span></div>
+        <ul class="exp-points">
+          <li>Wrote test cases and scripts that covered application functionality and raised test coverage by 30%.</li>
+          <li>Ran functional testing against every user story to validate requirements and improve software quality.</li>
+          <li>Worked with developers and the Scrum Master, and reported testing progress and blockers in Agile ceremonies.</li>
+        </ul>
+      </div>
+
+      <div class="sub-role">
+        <div class="sub-head"><span class="sub-title">Project Management Intern, Agile Scrum</span><span class="sub-date">Jul to Oct 2024</span></div>
+        <ul class="exp-points">
+          <li>Supported sprint planning and delivery in Jira.</li>
+          <li>Worked with business analysts to gather requirements and turn them into prioritised user stories with acceptance criteria.</li>
+          <li>Contributed to UI and UX work with designers to keep solutions focused on users.</li>
+        </ul>
+      </div>
+
       <ul class="exp-points">
-        <li>Worked across the requirements-to-delivery pipeline: sprint backlogs and user stories in Jira, alongside Agile delivery teams.</li>
-        <li>Reviewed product flows in Figma during requirements gathering, surfacing usability issues before development started.</li>
-        <li>Wrote test cases that pushed application test coverage up 30%, gaining a close, practical view of how engineering teams ship software from spec to production.</li>
         <li>Received an achievement award at the end of the placement.</li>
       </ul>
     </div>
@@ -282,6 +325,7 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
 
 <!-- PROJECTS -->
 <section id="projects">
+  <div class="proj-inner">
   <div class="sec-head">
     <div class="sec-marker"></div>
     <div><p class="sec-label">Selected work</p><h2 class="sec-title">Things I've built</h2></div>
@@ -290,15 +334,17 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
 
     <div class="proj-card featured">
       <div class="proj-header">
-        <div class="proj-title">Linguix-NG : Intelligent Normalization Middleware</div>
-        <span class="proj-badge active">Active · Final Year</span>
+        <div class="proj-title">Linguix-NG : Pidgin and English Translation</div>
+        <span class="proj-badge active">Final Year Project</span>
       </div>
-      <p class="proj-desc">Nigerian Pidgin is widely spoken day-to-day, but enterprise banking and healthcare platforms are built for formal English. Linguix-NG sits between user and API, translating Pidgin into standard English in real time, no backend changes required. Currently hitting a 74.76 BLEU score against a target of 50.</p>
+      <p class="proj-desc">Nigerian Pidgin is spoken daily by millions, but banking and healthcare platforms are written for formal English. Linguix-NG translates both ways between Pidgin and English across Healthcare, Banking, Retail and Customer Service. The fine tuned model reached a BLEU score of 74.76.</p>
       <ul class="proj-highlights">
-        <li>Curated a Pidgin-to-formal-English parallel corpus that didn't previously exist.</li>
-        <li>Hybrid architecture: fast rule-based mapping plus a Transformer model for nuanced cases.</li>
+        <li>Built a domain specific Pidgin and English parallel corpus of about 8,000 sentence pairs, which did not exist before.</li>
+        <li>Fine tuned a MarianMT model. A Transformer trained from scratch scored about 0.33 BLEU, so pre-trained initialisation made the difference.</li>
+        <li>Routes low quality output to Groq LLaMA 3.3 as a fallback, served through a Flask API with translation history logging and a React frontend.</li>
       </ul>
-      <div class="proj-stack"><span class="proj-tag">Python</span><span class="proj-tag">NLP</span><span class="proj-tag">Transformers</span><span class="proj-tag">HuggingFace</span><span class="proj-tag">REST API</span></div>
+      <div class="proj-stack"><span class="proj-tag">Python</span><span class="proj-tag">PyTorch</span><span class="proj-tag">Hugging Face</span><span class="proj-tag">MarianMT</span><span class="proj-tag">Flask</span><span class="proj-tag">React</span><span class="proj-tag">SQLite</span></div>
+      <div class="proj-links"><a href="https://github.com/Preciousuwadone/Linguix-ng" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
     <div class="proj-card">
@@ -306,13 +352,14 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
         <div class="proj-title">SmartStock : AI Digital Credit Book</div>
         <span class="proj-badge hack">Nomba Hackathon 2026</span>
       </div>
-      <p class="proj-desc">Replaces paper credit ledgers for Nigerian shop owners. Each customer gets a Nomba virtual account; a Random Forest model scores default risk; webhooks confirm payments in real time.</p>
-      <div class="proj-note">Built solo. Fixed a real production issue: Railway blocks outbound SMTP, so reminder emails moved to the Resend API.</div>
+      <p class="proj-desc">Replaces paper credit ledgers for Nigerian shop owners. Four backend services share one PostgreSQL database: auth, a credit engine, AI scoring and payment webhooks.</p>
+      <ul class="proj-highlights">
+        <li>Every customer gets a Nomba virtual account, and webhooks are signature verified with idempotent payment recording.</li>
+        <li>A Random Forest model scores default risk from 0 to 100, trained on 2,868 synthetic profiles (ROC-AUC 0.68).</li>
+        <li>Built solo. Fixed a real production issue: Railway blocks outbound SMTP, so reminder emails moved to the Resend API.</li>
+      </ul>
       <div class="proj-stack"><span class="proj-tag">React</span><span class="proj-tag">Flask</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">scikit-learn</span><span class="proj-tag">Nomba API</span></div>
-      <div class="proj-links">
-        <a href="https://smart-stock-frontend.up.railway.app/" class="proj-link" target="_blank">Live demo ↗</a>
-        <a href="https://github.com/Preciousuwadone/Smart-stock" class="proj-link" target="_blank">GitHub ↗</a>
-      </div>
+      <div class="proj-links"><a href="https://github.com/Preciousuwadone/Smart-stock" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
     <div class="proj-card">
@@ -320,8 +367,11 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
         <div class="proj-title">AURA : AI HR Co-Pilot</div>
         <span class="proj-badge hack">Hackathon · 24h</span>
       </div>
-      <p class="proj-desc">Built with a 4-person team in 24 hours. One dashboard combining performance analytics, attrition-risk prediction, and automated recruitment/onboarding, priced Free → Pro → Enterprise.</p>
-      <div class="proj-note">Role: Product Engineer &amp; AI Developer, alongside a Lead AI Engineer and backend/PM teammates.</div>
+      <p class="proj-desc">Built with a 4 person team in 24 hours. One dashboard combining performance analytics, attrition risk prediction, and automated recruitment and onboarding.</p>
+      <ul class="proj-highlights">
+        <li>Role: Product Engineer and AI Developer, alongside a Lead AI Engineer, a backend engineer and a frontend developer who also managed the project.</li>
+        <li>Designed for African SMEs that still run HR manually, with Free, Pay As You Go, Pro and Enterprise tiers.</li>
+      </ul>
       <div class="proj-stack"><span class="proj-tag">React</span><span class="proj-tag">TypeScript</span><span class="proj-tag">n8n</span><span class="proj-tag">OpenAI API</span></div>
       <div class="proj-links"><a href="https://github.com/AURA-HR-AI/AURAVersion1" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
@@ -329,10 +379,14 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
     <div class="proj-card">
       <div class="proj-header">
         <div class="proj-title">Digital Privacy Risk Simulator</div>
-        <span class="proj-badge default">Full-Stack · Cloud</span>
+        <span class="proj-badge default">Full Stack · Cloud</span>
       </div>
-      <p class="proj-desc">A short survey on password reuse and credential hygiene, scored by a rule-based Flask engine into Low/Medium/High risk. Submissions are stored anonymously in Firestore and charted over time on the frontend.</p>
-      <div class="proj-stack"><span class="proj-tag">Python</span><span class="proj-tag">Flask</span><span class="proj-tag">React</span><span class="proj-tag">Firestore</span></div>
+      <p class="proj-desc">A short survey on password reuse and credential hygiene, scored into a Low, Medium or High risk rating and charted over time on the frontend.</p>
+      <ul class="proj-highlights">
+        <li>Rule based scoring engine in Flask that turns survey answers into a risk rating.</li>
+        <li>Anonymous submissions stored in Firestore, with the backend packaged in Docker.</li>
+      </ul>
+      <div class="proj-stack"><span class="proj-tag">Python</span><span class="proj-tag">Flask</span><span class="proj-tag">React</span><span class="proj-tag">Firestore</span><span class="proj-tag">Docker</span></div>
       <div class="proj-links"><a href="https://github.com/Preciousuwadone/digital_privacy-simulator-ng" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
@@ -341,7 +395,11 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
         <div class="proj-title">Bare-Metal OS Kernel in Rust</div>
         <span class="proj-badge default">Systems</span>
       </div>
-      <p class="proj-desc">A no-std, no-main x86-64 kernel that boots via BIOS and UEFI, writes directly to VGA framebuffer memory and runs in QEMU via a custom Cargo build pipeline.</p>
+      <p class="proj-desc">A no_std, no_main x86-64 kernel that runs in QEMU through a custom Cargo build pipeline.</p>
+      <ul class="proj-highlights">
+        <li>Boots through both BIOS and UEFI with no standard library and no operating system underneath.</li>
+        <li>Writes directly to VGA framebuffer memory to draw output.</li>
+      </ul>
       <div class="proj-stack"><span class="proj-tag">Rust</span><span class="proj-tag">x86-64</span><span class="proj-tag">QEMU</span></div>
       <div class="proj-links"><a href="https://github.com/Preciousuwadone/p.uwadonecsc308" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
@@ -351,11 +409,16 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
         <div class="proj-title">School Cafeteria Management System</div>
         <span class="proj-badge default">Desktop App</span>
       </div>
-      <p class="proj-desc">A Java Swing app with role-based access for Admin, Cashier and Kitchen Staff, real-time attendance logging, audit trails and CSV persistence.</p>
+      <p class="proj-desc">A Java Swing app for running cafeteria operations, with staff management and attendance tracking.</p>
+      <ul class="proj-highlights">
+        <li>Role based access separates what Admin, Cashier and Kitchen Staff can do.</li>
+        <li>Staff sign in and sign out times are logged with timestamps and saved to CSV.</li>
+      </ul>
       <div class="proj-stack"><span class="proj-tag">Java</span><span class="proj-tag">Swing</span><span class="proj-tag">Apache Ant</span></div>
       <div class="proj-links"><a href="https://github.com/Preciousuwadone/OOP-PROJECT" class="proj-link" target="_blank">View on GitHub ↗</a></div>
     </div>
 
+  </div>
   </div>
 </section>
 
@@ -369,20 +432,20 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
     <div class="comm-card">
       <div class="comm-org">AWS</div>
       <div class="comm-title">Nigerian DevOps Study Group [Active Member]</div>
-      <p class="comm-desc">I meet regularly with this community of Nigerian engineers to work through cloud infrastructure, CI/CD pipelines and containerisation problems together, and to stay current on tools I don't get to use day-to-day at school or work.</p>
+      <p class="comm-desc">I meet regularly with this community of Nigerian engineers to work through cloud infrastructure, CI/CD pipelines and containerisation problems together, and to stay current on tools I don't get to use day to day at school or work.</p>
       <div class="comm-date">Ongoing</div>
     </div>
     <div class="comm-card">
       <div class="comm-org">Pan-Atlantic University</div>
       <div class="comm-title">Feedback &amp; Communication Team [Volunteer]</div>
       <p class="comm-desc">Served as a channel between students and the administration, collecting recurring concerns from my peers and making sure they actually reached the people who could act on them.</p>
-      <div class="comm-date">Mar 2025 – Jan 2026</div>
+      <div class="comm-date">Mar 2025 to Jan 2026</div>
     </div>
     <div class="comm-card">
       <div class="comm-org">Pan-Atlantic University</div>
       <div class="comm-title">Social Media &amp; Publicity Team [Volunteer]</div>
       <p class="comm-desc">Ran the university's social media presence during major campus events and announcements, keeping the wider student body informed and engaged in real time.</p>
-      <div class="comm-date">Nov 2024 – Jan 2026</div>
+      <div class="comm-date">Nov 2024 to Jan 2026</div>
     </div>
   </div>
 
@@ -414,11 +477,11 @@ footer{padding:3.5rem 2.5rem 2rem;background:var(--ink);color:#fff}
       <div class="info-card-title">Education</div>
       <div class="info-row">
         <div class="info-main"><div class="info-title">B.Sc. Computer Science</div><div class="info-issuer">Pan-Atlantic University, Lagos</div></div>
-        <div class="info-date">2022 – 2026</div>
+        <div class="info-date">2022 to 2026</div>
       </div>
       <div class="info-row">
         <div class="info-main"><div class="info-title">High School Diploma</div><div class="info-issuer">Caleb British Int'l School</div></div>
-        <div class="info-date">2019 – 2022</div>
+        <div class="info-date">2019 to 2022</div>
       </div>
     </div>
   </div>
